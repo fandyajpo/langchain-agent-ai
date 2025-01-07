@@ -1,0 +1,32 @@
+{
+  "name": "langchain-gpt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "rimraf dist && npx tsc && node dist/query.js",
+    "init": "rimraf dist && npx tsc && node dist/init.js",
+    "clear": "rimraf dist && npx tsc && node dist/clear.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@langchain/cohere": "^0.3.2",
+    "@langchain/openai": "^0.3.16",
+    "@pinecone-database/pinecone": "^4.0.0",
+    "dotenv": "^16.4.7",
+    "langchain": "^0.3.9",
+    "openai": "^4.77.0",
+    "pinecone-client": "^2.0.0"
+  },
+  "resolutions": {
+    "@langchain/core": "0.1.5"
+  }
+}
