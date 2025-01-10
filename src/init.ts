@@ -13,9 +13,8 @@ async function init() {
     const fileContent = await fs.readFile(filePath, "utf-8");
 
     const splitter = new RecursiveCharacterTextSplitter({
-      chunkSize: 100,
+      chunkSize: 1000,
       chunkOverlap: 0,
-      separators: ["\n\n", "\n", " ", ""],
     });
 
     const chunks = await splitter.splitText(fileContent);

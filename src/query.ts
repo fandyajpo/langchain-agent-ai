@@ -10,7 +10,7 @@ async function query() {
     const pc = initializePinecone();
     const embeddings = cohereEmbeddings();
     const index = pc.index(indexName);
-    const query = "how old are you?";
+    const query = "where i can get Machine Learning course?";
     const queryEmbedding = await embeddings.embedQuery(query);
 
     const queryResponse = await index.query({
